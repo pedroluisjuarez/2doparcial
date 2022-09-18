@@ -10,8 +10,8 @@
                   <div class="col-md-12">
                         <div class="card">
                               <div class="card-header">
-                                    LISTADO DE PRODUCTOS
-                                    <a href="{{route('productsvista.aliascrear')}}" class="btn btn-success btn-sm float-right">Nuevo Producto</a>
+                                    LISTADO DESDE BASE DATOS
+                                    <a href="{{route('productsvista.aliascrear')}}" class="btn btn-success btn-sm float-right">Nuevo estudiante</a>
                                              <!--helper (5) desde web.php -->
                               <div>
                               <div class="card-body">
@@ -52,8 +52,8 @@
 
                                           </table>
                               </div>
-            <div class="card-footer"> Bienvenido {{ auth()->user()->name }}  <!--BIENVENIDA AL USUARIO-->
-            <a href="javascript:document.getElementById('logout').submit()" class="btn btn-danger btn-sm float-right">Cerrar Sesion</a>
+            <div class="card-footer"> Bienvenido {{ auth()->user()->name }}  BIENVENIDA AL USUARIO
+             <a href="javascript:document.getElementById('logout').submit()" class="btn btn-danger btn-sm float-right">Cerrar Sesion</a>
             <form action="{{ route('logout') }}" id="logout" style="display:none" method="post"></form>
             @csrf
             </div>
